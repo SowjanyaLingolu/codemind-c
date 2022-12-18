@@ -1,13 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    int a,d,sum=0,pro=1;
+    int a,i,sum=0,pro=1,dig;
     scanf("%d",&a);
-    for(;a>0;)
+    while(a!=0)
     {
-        d=a%10;
-        sum=sum+d;
-        pro=pro*d;
+        dig=a%10;
+        sum=sum+dig;
+        pro=pro*dig;
         a=a/10;
     }
     if(sum==pro)
