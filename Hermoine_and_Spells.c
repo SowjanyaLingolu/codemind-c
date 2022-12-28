@@ -3,7 +3,7 @@ int main()
 {
     int a,b,c,x;
     scanf("%d%d%d",&a,&b,&c);
-    if(a<b && a<c)
+    if(a<b && b<c)
     {
         x=b+c;
     }
