@@ -13,4 +13,5 @@ int main()
         num=num/10;
     }
     printf("%d",large);
+    return 0;
 }
