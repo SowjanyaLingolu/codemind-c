@@ -1,31 +1,22 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,ele,flag;
+    int n,a,x=0,i,arr[100];
     scanf("%d",&n);
-    int a[n];
     for(i=0;i<n;i++)
     {
-        scanf("%d",&a[i]);
+        scanf("%d",&arr[i]);
     }
-    for(i=0;i<n;i++)
+    scanf("%d",&a);
+    for (i=0;i<n;i++)
     {
-        scanf("%d",&ele);
-    }
-    for(i=0;i<n;i++)
-    {
-        if(a[i]==ele)
+        if(a==arr[i])
         {
-            flag=1;
-            break;
+            x=1;
         }
     }
-    if(flag==1)
-    {
-        printf("True");
-    }
+    if(x==1)
+    printf("True");
     else
-    {
-        printf("False");
-    }
+    printf("False");
 }
